@@ -16,7 +16,6 @@ options.add_argument('--profile-directory=Default')
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--ignore-ssl-errors')
 
-# Get path of the parent directory
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 # Inicializamos el navegador
@@ -185,8 +184,11 @@ def scrap(regions, items):
     df = pd.DataFrame()
     try:
         for region in regions:
+            # Navegamos a la región
             search_region(region)
+            # Obtenemos los datos
             df_data = get_data(region, items)
+            # Añadimos los datos al dataframe
             df = df.append(pd.DataFrame(df_data), ignore_index=True)
     except:
         pass

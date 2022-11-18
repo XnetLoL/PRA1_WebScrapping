@@ -205,6 +205,9 @@ if __name__ == '__main__':
 
     # Guardamos los datos en un csv
     df.to_csv('data.csv', index=False)
+
+    # Imprimimos el User-Agent
+    print(driver.execute_script("return navigator.userAgent"))
     
     # Cerramos el navegador
     driver.quit()

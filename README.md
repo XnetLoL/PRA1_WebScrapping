@@ -4,9 +4,9 @@
 ## Integrantes:
 
 * Ouassim Aouattah  
-  Usuario de Github: 
+  Usuario de Github: XnetLoL
 * Juan Dávila.  
-  Usuario de Github:
+  Usuario de Github: juandavila94
 
 ## Descripción Archivos:
 
